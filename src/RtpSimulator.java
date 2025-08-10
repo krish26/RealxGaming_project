@@ -24,13 +24,13 @@ public class RtpSimulator {
         double totalWins = 0.0;
         double totalBets = spins * betAmount;
 
-        for (int i = 0; i < spins; i++) {
+        for (int i = 0; i < spins; i++) {  //spin loop
             Symbol[][] grid = gridGenerator.generateGrid();
             double spinWin = 0.0;
 
             int roundCount = 0;
 
-            while (true) {
+            while (true) {   //avalanche loop
                 if (++roundCount > maxAvalancheRounds) break;
 
                 List<Set<int[]>> clusters = clusterFinder.findClusters(grid);

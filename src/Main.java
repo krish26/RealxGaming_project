@@ -68,7 +68,7 @@ public class Main {
 
         System.out.println("Final payout: " + finalWin + " EUR");
 
-        // Run RTP simulation (can comment out if not needed)
+        // Run RTP simulation
         RtpSimulator rtpSimulator = new RtpSimulator(gridGenerator, clusterFinder, avalancheProcessor, payoutCalculator, betAmount);
         rtpSimulator.runRtpSimulation(1000);
     }
