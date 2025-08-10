@@ -23,7 +23,7 @@ public class GridGenerator {
 
         for (int col = 0; col < COLS; col++) {
             for (int row = 0; row < ROWS; row++) {
-                grid[row][col] = weightedSymbols.get(random.nextInt(weightedSymbols.size()));
+                grid[row][col] = weightedSymbols.get(random.nextInt(weightedSymbols.size())); // selects random symbol in symbol pool
             }
         }
 

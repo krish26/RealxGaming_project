@@ -25,10 +25,10 @@ public class Main {
             symbolWeights.put(s, 100);
         }
 
-        GridGenerator gridGenerator = new GridGenerator(symbolWeights);
-        ClusterFinder clusterFinder = new ClusterFinder(GridGenerator.getRows(), GridGenerator.getCols(), payoutTable);
-        AvalancheProcess avalancheProcessor = new AvalancheProcess(GridGenerator.getRows(), GridGenerator.getCols(), gridGenerator.getWeightedSymbols());
-        PayoutCalculator payoutCalculator = new PayoutCalculator(payoutTable);
+        GridGenerator gridGenerator = new GridGenerator(symbolWeights); //generates 8 * 8 grid with symbols
+        ClusterFinder clusterFinder = new ClusterFinder(GridGenerator.getRows(), GridGenerator.getCols(), payoutTable); //finds clusters and give payouts
+        AvalancheProcess avalancheProcessor = new AvalancheProcess(GridGenerator.getRows(), GridGenerator.getCols(), gridGenerator.getWeightedSymbols()); //makes avalanche happen
+        PayoutCalculator payoutCalculator = new PayoutCalculator(payoutTable); //cal total payout
 
         // Generate initial grid
         Symbol[][] grid = gridGenerator.generateGrid();
