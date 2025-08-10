@@ -1,4 +1,4 @@
-1. class name must be Account not 'account'
+ class name must be Account not 'account'
 createTimestampAndExpirydate() method name have inconsistant casing (date must be Date)
 variable name like return1 should have more descriptive names
 in equals() method should use .equals() insted of '==' since '==' compars object reference not the content .
