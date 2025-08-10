@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double betAmount = 10.0;
+        double betAmount = 20.0;
 
         // Initialize payout table
         Map<Symbol, int[]> payoutTable = new HashMap<>();
